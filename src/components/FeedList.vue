@@ -22,5 +22,8 @@ export default {
 
 <style lang="scss" scoped>
 .FeedList {
+  padding: 0;
+
+  list-style: none;
 }
 </style>

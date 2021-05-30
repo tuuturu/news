@@ -12,7 +12,20 @@ export default {
   components: { FeedList },
   data: () => ({
     items: [
-      {title: "Something happened!"}
+      {
+        title: "Something happened!",
+        age: "6min",
+        source: {
+          name: "Aftenposten"
+        }
+      },
+      {
+        title: "Completely different",
+        age: "1 day",
+        source: {
+          name: "Hacker News"
+        }
+      }
     ]
   })
 }
