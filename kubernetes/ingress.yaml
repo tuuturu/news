@@ -1,0 +1,23 @@
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: news
+spec:
+  rules:
+  - host: news.tuuturu.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: news
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - news.tuuturu.org
+    secretName: news-tls
+
