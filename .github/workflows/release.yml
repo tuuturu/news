@@ -64,12 +64,12 @@ jobs:
 
       - run: |
           sed -i 's~${{ env.image }}:.*~${{ env.image }}:${{ env.version }}~' \
-          kubernetes/deployment.yaml
+          kustomize/deployment.yaml
 
       - name: Commit version bump
         uses: EndBug/add-and-commit@v4
         with:
           author_name: 'Automated Version Bump'
           author_email: 'action@github.com'
-          add: 'package.json package-lock.json kubernetes/deployment.yaml'
+          add: 'package.json package-lock.json kustomize/deployment.yaml'
           message: "📦 Bump version to ${{ env.version }}"
