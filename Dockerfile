@@ -1,5 +1,5 @@
 ### Dependency stage
-FROM node:lts-alpine AS dep-stage
+FROM node:lts AS dep-stage
 
 WORKDIR /build
 
