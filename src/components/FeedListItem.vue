@@ -10,6 +10,8 @@
 <script>
 export default {
   name: 'FeedListItem',
+  computed: {
+  },
   props: {
     item: {
       type: Object,
