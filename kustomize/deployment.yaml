@@ -15,6 +15,6 @@ spec:
         app: news
     spec:
       containers:
-      - image: ghcr.io/tuuturu/news:0.0.3
+      - image: ghcr.io/tuuturu/news:0.0.4
         name: news
 
