@@ -96,4 +96,4 @@ jobs:
           # A custom webhook event name.
           event-type: deploy
           # JSON payload with extra information about the webhook event that your action or worklow may use.
-          client-payload: '{"appname: "news", "appversion": "${{ env.version }}"}' # optional, default is {}
+          client-payload: '{"appname": "news", "appversion": "${{ env.version }}"}' # optional, default is {}
